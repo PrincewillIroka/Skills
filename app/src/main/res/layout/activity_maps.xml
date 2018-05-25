@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skills.skills.MapsActivity"
+    tools:openDrawer="start">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/searchbackground"
+            android:elevation="5dp"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/nav"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_dehaze"
+                tools:ignore="VectorDrawableCompat" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autocomplete_skills"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="45dp"
+                android:layout_marginStart="71dp"
+                android:background="@drawable/searchbackground"
+                android:hint="Search for a skill"
+                android:nextFocusLeft="@id/autocomplete_skills"
+                android:nextFocusUp="@id/autocomplete_skills"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_close"
+                android:visibility="invisible"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@color/almost_black"
+            android:textSize="17sp"
+            android:textStyle="italic" />
+
+    </fragment>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:elevation="20dp"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="#000"
+        app:itemTextColor="#000"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

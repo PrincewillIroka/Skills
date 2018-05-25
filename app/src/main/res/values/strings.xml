@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Skills</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="skills_array">
+        <item>Plumber</item>
+        <item>Electrician</item>
+        <item>Computer Engineer</item>
+        <item>Gardener</item>
+        <item>Nurse</item>
+        <item>Cleaner</item>
+    </string-array>
+    <string name="aim">Skills is an app developed to help potential employers to find neighbours who have the skills they need to render a service or do a job for them.</string>
+</resources>

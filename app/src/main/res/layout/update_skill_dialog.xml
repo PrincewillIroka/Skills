@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/black2"
+    android:elevation="50dp"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Select your skills"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/cleaner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:buttonTint="@color/white"
+        android:text="Cleaner"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/computerEngineer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white"
+        android:text="Computer Engineer"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/electrician"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:buttonTint="@color/white"
+        android:text="Electrician"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/gardener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white"
+        android:text="Gardener"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/nurse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:buttonTint="@color/white"
+        android:text="Nurse"
+        android:textColor="@color/white" />
+
+    <CheckBox
+        android:id="@+id/plumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/white"
+        android:text="Plumber"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_border4"
+        android:elevation="5dp"
+        android:text="Update"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

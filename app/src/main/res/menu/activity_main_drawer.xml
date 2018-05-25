@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/sign_in"
+            android:icon="@drawable/ic_vpn_key"
+            android:title="Sign In" />
+
+        <item
+            android:id="@+id/sign_out"
+            android:icon="@drawable/ic_vpn_key"
+            android:title="Sign Out" />
+
+        <item
+            android:id="@+id/update_profile"
+            android:icon="@drawable/ic_person_add"
+            android:title="Update Profile" />
+
+        <item
+            android:id="@+id/about_app"
+            android:icon="@drawable/ic_info_outline"
+            android:title="About the App" />
+
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_contact_phone"
+            android:title="Contact Us" />
+
+    </group>
+
+</menu>
